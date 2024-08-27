@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+  width: 6px;
+  background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #83B7E1;
+  border-radius: 6px;
+}
+
 .img {
   width: 100%;
   position: relative;
