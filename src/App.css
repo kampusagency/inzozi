@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.img {
+  width: 100%;
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
