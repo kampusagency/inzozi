@@ -1,0 +1,794 @@
+@import "./../assets/styles/global.scss";
+
+.home {
+    width: 100%;
+    position: relative;
+    font-family: $font-primary;
+
+    .container {
+        width: 80%;
+    }
+
+    .imigongo {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            color: $accent-color;
+        }
+    }
+
+    .hero {
+        width: 100%;
+        height: 120vh;
+        position: relative;
+        background: $yellow-color url(./../assets/image/hero/image1.png);
+        background-size: cover;
+        background-position: center;
+
+        .logo {
+            width: 100%;
+            padding: 2rem 0;
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 6rem;
+            }
+        }
+
+        .content {
+            top: 50%;
+            width: 100%;
+            max-width: 32rem;
+            position: absolute;
+            transform: translateY(-50%);
+
+            h2 {
+                font-size: 3rem;
+                font-weight: lighter;
+                color: $accent-color;
+                line-height: 1.2;
+                padding: 1rem 0;
+            }
+
+            .line {
+                width: 100%;
+                border: none;
+                margin: 1rem 0;
+                height: 0.12rem;
+                background-color: $accent-color;
+            }
+
+            span {
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        .scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 6rem;
+            transform: translateX(-50%);
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 2rem;
+            }
+
+            .text{
+                font-weight: bold;
+                color: $white-color;
+            }
+
+            &:hover {
+                opacity: 0.6;
+                bottom: 5rem;
+            }
+        }
+    }
+
+    .explore {
+        width: 100%;
+        height: 180vh;
+        position: relative;
+        background: $yellow-color url(./../assets/image/hero/image2.png);
+        background-size: cover;
+        background-position: center;
+
+        .container {
+            height: 100%;
+            position: relative;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 600px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+
+            h2 {
+                font-size: 3rem;
+                position: relative;
+                font-weight: lighter;
+                color: $accent-color;
+                line-height: 1.2;
+                padding: 1rem 0;
+            }
+
+            .line {
+                width: 100%;
+                border: none;
+                margin: 1rem 0;
+                height: 0.12rem;
+                background-color: $accent-color;
+            }
+
+            span {
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .action {
+                width: 100%;
+                margin-top: 6rem;
+                position: relative;
+
+                .btn {
+                    margin: 1rem 0;
+                    font-weight: bold;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                    color: $white-color;
+                    display: inline-flex;
+                    text-transform: uppercase;
+                    background: $accent-color;
+                }
+
+                a {
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+
+            .contact {
+                gap: 2rem;
+                display: flex;
+                position: relative;
+                align-items: center;
+
+                a {
+                    gap: 0.6rem;
+                    display: flex;
+                    align-items: center;
+                    color: $accent-color;
+
+                    img {
+                        width: 100%;
+                        max-width: 2.4rem;
+                        pointer-events: none;
+                    }
+
+                    span {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+
+        .scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 6rem;
+            transform: translateX(-50%);
+
+            display: flex;
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 2.4rem;
+            }
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .service {
+        width: 100%;
+        height: 160vh;
+        position: relative;
+        background: $primary-color url(./../assets/image/hero/image4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        .content {
+            width: 100%;
+            margin-top: 9rem;
+            position: relative;
+
+            .wedo {
+                width: 100%;
+                display: flex;
+                position: relative;
+                align-items: center;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 3rem;
+                    font-weight: lighter;
+                    color: $accent-color;
+                    line-height: 1.2;
+                }
+
+                .line {
+                    width: 100%;
+                    border: none;
+                    margin: 1rem 0;
+                    height: 0.12rem;
+                    background-color: $accent-color;
+                }
+
+                ul {
+                    gap: 2rem;
+                    width: 100%;
+                    display: flex;
+                    margin-top: 2rem;
+                    align-items: start;
+                    justify-content: center;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                            max-width: 2.4rem;
+                        }
+
+                        .caption {
+                            display: flex;
+                            flex-direction: column; // Stack the words vertically
+                            align-items: center; // Center the words
+                            text-align: center; // Ensure the words are centered
+                            margin-top: 0.5rem; // Add space between the image and caption
+
+                            span {
+                                display: block;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .grids {
+                gap: 1rem;
+                width: 100%;
+                display: grid;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                }
+            }
+
+            .bottom {
+                width: 100%;
+                margin-top: 4rem;
+                max-width: 600px;
+                position: relative;
+
+                .btn {
+                    cursor: default;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                    color: $white-color;
+                    display: inline-flex;
+                    text-transform: uppercase;
+                    background: $accent-color;
+                }
+
+                .contact {
+                    gap: 2rem;
+                    display: flex;
+                    margin-top: 2rem;
+                    position: relative;
+                    align-items: center;
+
+                    a {
+                        gap: 0.6rem;
+                        display: flex;
+                        align-items: center;
+                        color: $accent-color;
+
+                        img {
+                            width: 100%;
+                            max-width: 2.4rem;
+                            pointer-events: none;
+                        }
+
+                        span {
+                            font-size: 1rem;
+                            font-weight: 400;
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+        }
+
+        .scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 6rem;
+            transform: translateX(-50%);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 2rem;
+                position: relative;
+                pointer-events: none;
+            }
+
+            &:hover {
+                bottom: 5rem;
+            }
+        }
+    }
+
+    .animal {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: $primary-color url(./../assets/image/hero/image4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        .scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 4rem;
+            transform: translateX(-50%);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 2rem;
+                position: relative;
+                pointer-events: none;
+            }
+
+            &:hover {
+                bottom: 3rem;
+            }
+        }
+
+        .content {
+            width: 100%;
+            position: relative;
+            gap: 1rem;
+            display: grid;
+            align-items: center;
+            justify-content: end;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            .text {
+                width: 100%;
+                max-width: 600px;
+                position: relative;
+
+                h2 {
+                    font-size: 3rem;
+                    position: relative;
+                    font-weight: lighter;
+                    color: $white-color;
+                    line-height: 1.2;
+                    // padding: 1rem 0;
+                }
+
+                .line {
+                    width: 100%;
+                    border: none;
+                    margin: 1rem 0;
+                    height: 0.12rem;
+                    background-color: $white-color;
+                }
+
+                span {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: $white-color;
+                    text-transform: uppercase;
+                }
+
+                .action {
+                    width: 100%;
+                    margin-top: 6rem;
+                    position: relative;
+
+                    .btn {
+                        margin: 1rem 0;
+                        font-weight: bold;
+                        padding: 1rem 2rem;
+                        border-radius: 10px;
+                        color: $white-color;
+                        display: inline-flex;
+                        text-transform: uppercase;
+                        background: $accent-color;
+                    }
+
+                    a {
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+
+                    .contact {
+                        gap: 2rem;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+
+                        a {
+                            gap: 0.6rem;
+                            display: flex;
+                            align-items: center;
+                            color: $accent-color;
+
+                            img {
+                                width: 100%;
+                                max-width: 2.4rem;
+                                pointer-events: none;
+                            }
+
+                            span {
+                                font-size: 1rem;
+                                font-weight: 400;
+                                color: $accent-color;
+                                text-transform: lowercase;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img {
+                width: 100%;
+                height: auto;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .place {
+        width: 100%;
+        height: 130vh;
+        padding: 3rem 0;
+        position: relative;
+        background: $primary-color url(./../assets/image/hero/image4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        .content {
+            width: 100%;
+            position: relative;
+            gap: 1rem;
+            display: grid;
+            align-items: center;
+            justify-content: end;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            .text {
+                width: 100%;
+                max-width: 600px;
+                position: relative;
+
+                h2 {
+                    font-size: 3rem;
+                    position: relative;
+                    font-weight: lighter;
+                    color: $white-color;
+                    line-height: 1.2;
+                    // padding: 1rem 0;
+                }
+
+                .line {
+                    width: 100%;
+                    border: none;
+                    margin: 1rem 0;
+                    height: 0.12rem;
+                    background-color: $white-color;
+                }
+
+                span {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: $white-color;
+                    text-transform: uppercase;
+                }
+
+                .action {
+                    width: 100%;
+                    margin-top: 6rem;
+                    position: relative;
+
+                    .btn {
+                        margin: 1rem 0;
+                        font-weight: bold;
+                        padding: 1rem 2rem;
+                        border-radius: 10px;
+                        color: $white-color;
+                        display: inline-flex;
+                        text-transform: uppercase;
+                        background: $accent-color;
+                    }
+
+                    a {
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+
+                    .contact {
+                        gap: 2rem;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+
+                        a {
+                            gap: 0.6rem;
+                            display: flex;
+                            align-items: center;
+                            color: $accent-color;
+
+                            img {
+                                width: 100%;
+                                max-width: 2.4rem;
+                                pointer-events: none;
+                            }
+
+                            span {
+                                font-size: 1rem;
+                                font-weight: 400;
+                                color: $accent-color;
+                                text-transform: lowercase;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img {
+                width: 100%;
+                height: auto;
+                pointer-events: none;
+            }
+        }
+
+        .title {
+            position: absolute;
+            left: 50%;
+            bottom: 2rem;
+            transform: translateX(-50%);
+
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    .map {
+        width: 100%;
+        position: relative;
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+
+            .map-frame {
+                width: 100%;
+                height: 450px;
+                outline: none;
+                border: none;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            .info-card {
+                position: absolute;
+                top: 35%;
+                left: 63%;
+                transform: translate(-50%, -50%);
+                background: $white-color;
+                padding: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                display: flex;
+                align-items: center;
+                max-width: 420px;
+                transition:
+                    transform 0.3s ease,
+                    opacity 0.3s ease;
+                opacity: 0.95;
+
+                .liner {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0.2rem;
+                    height: 100%;
+                    background: $accent-color;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    opacity: 1;
+                }
+
+                .card-logo {
+                    flex: 1;
+
+                    img {
+                        width: 100px;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+
+                .card-details {
+                    flex: 2;
+                    gap: 1rem;
+                    display: flex;
+                    padding-left: 15px;
+                    flex-direction: column;
+
+                    .line {
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+
+                        .title,
+                        span {
+                            display: flex;
+                            align-items: center;
+                            color: $accent-color;
+                            gap: 0.3rem;
+                            opacity: 0.8;
+                            font-size: 0.8rem;
+
+                            svg {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        a {
+                            color: $accent-color;
+                            font-weight: 600;
+                            font-size: 1rem;
+                            line-height: 1.2;
+
+                            &:hover {
+                                opacity: 0.6;
+                            }
+                        }
+
+                        span {
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            // Responsiveness for Tablets
+            @media (max-width: 768px) {
+                .map-frame {
+                    height: 350px; // Smaller height for tablets
+                }
+
+                .info-card {
+                    top: 70%; // Adjust position to better fit on smaller screens
+                    left: 50%; // Adjust left position for centered look
+                    transform: translate(-50%, -50%);
+                    padding: 15px;
+                    max-width: 280px; // Reduce card width for tablets
+
+                    .card-details {
+                        p {
+                            font-size: 13px; // Reduce font size slightly for tablets
+                        }
+
+                        .icon {
+                            font-size: 16px; // Scale down the icons slightly
+                        }
+                    }
+
+                    .card-logo img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            // Responsiveness for Mobile Devices
+            @media (max-width: 480px) {
+                padding: 10px; // Reduce padding on mobile screens
+
+                .map-frame {
+                    height: 250px; // Smaller height for mobile
+                }
+
+                .info-card {
+                    top: 85%; // Adjust position to better fit on mobile screens
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: 10px;
+                    max-width: 90vw; // Use viewport width to better fit smaller screens
+
+                    .card-details {
+                        padding-left: 10px;
+
+                        p {
+                            font-size: 12px; // Smaller font size for mobile
+                        }
+
+                        .icon {
+                            font-size: 14px; // Scale down the icons for mobile
+                        }
+                    }
+
+                    .card-logo img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

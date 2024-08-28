@@ -1,7 +1,8 @@
+@import url(./assets/styles/global.scss);
+
 * {
   margin: 0;
   padding: 0;
-  user-select: none;
   box-sizing: border-box;
 }
 
@@ -12,16 +13,5 @@
 
 ::-webkit-scrollbar-thumb{
   background: #83B7E1;
-  border-radius: 6px;
 }
 
-.img {
-  width: 100%;
-  position: relative;
-}
-
-.img img {
-  width: 100%;
-  height: auto;
-  pointer-events: none;
-}

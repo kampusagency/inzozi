@@ -1,0 +1,98 @@
+@import "./../assets/styles/global.scss";
+
+.footer {
+    width: 100%;
+    position: relative;
+    background: $white-color;
+
+    .imigongo {
+        width: 100%;
+        padding: 0.2rem 0;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            pointer-events: none;
+        }
+    }
+
+    .content {
+        width: 100%;
+        position: relative;
+
+        .top {
+            width: 100%;
+            padding: 1rem 0;
+            position: relative;
+
+            ul {
+                display: grid;
+                text-align: center;
+                align-items: center;
+                font-family: $font-primary;
+                justify-content: space-between;
+                grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+                li {
+                    a {
+                        transition: $transition;
+                        text-transform: capitalize;
+                        white-space: nowrap;
+                        color: $accent-color;
+                        position: relative;
+                        font-weight: 400;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+
+                        &::before {
+                            content: "\2022";
+                            font-size: 1.5rem;
+                            margin-right: 0.3rem;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+
+        .line {
+            width: 100%;
+            border: none;
+            height: 0.1rem;
+            background-color: $accent-color;
+        }
+
+        .bottom {
+            width: 100%;
+            padding: 1rem 0;
+            position: relative;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                li {
+                    padding: 0 1rem;
+                    border-right: 0.1rem solid;
+                    border-color: $accent-color;
+
+                    &:last-child {
+                        border: none;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-width: auto;
+                        max-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
