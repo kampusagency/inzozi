@@ -8,6 +8,7 @@ function Hero() {
   return (
     <>
       <div className="hero">
+        <div className="overlay"></div>
         <div className="imigongo">
           <img src={imigongo} alt="Umugongo" />
         </div>
@@ -20,7 +21,7 @@ function Hero() {
             <hr className="line" />
             <span>see what we have in store for you</span>
           </div>
-          <a className="scroll">
+          <a href="#explore" className="scroll">
             <span><img src={scroll} alt="chevron-down" /></span>
             <span className="text">Scroll down</span>
           </a>

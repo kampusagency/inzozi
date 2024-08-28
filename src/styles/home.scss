@@ -22,7 +22,7 @@
 
     .hero {
         width: 100%;
-        height: 120vh;
+        height: fit-content;
         position: relative;
         background: $yellow-color url(./../assets/image/hero/image1.png);
         background-size: cover;
@@ -40,11 +40,11 @@
         }
 
         .content {
-            top: 50%;
+            // top: 50%;
             width: 100%;
             max-width: 32rem;
-            position: absolute;
-            transform: translateY(-50%);
+            position: relative;
+            padding: 10% 0 20% 0;
 
             h2 {
                 font-size: 3rem;
@@ -52,6 +52,12 @@
                 color: $accent-color;
                 line-height: 1.2;
                 padding: 1rem 0;
+
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-shadow: 0 0 6px $white-color;
+                }
             }
 
             .line {
@@ -60,12 +66,21 @@
                 margin: 1rem 0;
                 height: 0.12rem;
                 background-color: $accent-color;
+
+                @media (max-width: 600px) {
+                    width: 66%;
+                }
             }
 
             span {
                 font-size: 1.2rem;
                 font-weight: 700;
+                color: $accent-color;
                 text-transform: uppercase;
+
+                @media (max-width: 500px) {
+                    text-shadow: 0 0 6px $white-color;
+                }
             }
         }
 
@@ -85,7 +100,7 @@
                 max-width: 2rem;
             }
 
-            .text{
+            .text {
                 font-weight: bold;
                 color: $white-color;
             }
@@ -95,28 +110,42 @@
                 bottom: 5rem;
             }
         }
+
+        @media (max-width: 940px) {
+            .content {
+                padding: 6rem 0 9rem 0;
+
+                h2 {
+                    font-weight: 600;
+                }
+            }
+
+            .scroll {
+                display: none;
+            }
+        }
     }
 
     .explore {
         width: 100%;
-        height: 180vh;
+
+        max-height: fit-content;
         position: relative;
-        background: $yellow-color url(./../assets/image/hero/image2.png);
+        background: $yellow-color url(./../assets/image/hero/image21.png);
         background-size: cover;
         background-position: center;
 
         .container {
             height: 100%;
             position: relative;
+            padding: 6rem 0;
         }
 
         .content {
             width: 100%;
             max-width: 600px;
-            position: absolute;
-            top: 50%;
+            position: position;
             left: 0;
-            transform: translateY(-50%);
 
             h2 {
                 font-size: 3rem;
@@ -188,6 +217,12 @@
                         text-transform: lowercase;
                     }
                 }
+
+                @media (max-width: 500px) {
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 0.6rem;
+                }
             }
         }
 
@@ -198,6 +233,7 @@
             transform: translateX(-50%);
 
             display: flex;
+            display: none;
 
             img {
                 width: 100%;
@@ -213,8 +249,9 @@
 
     .service {
         width: 100%;
-        height: 160vh;
+        padding: 0 0 3rem 0;
         position: relative;
+        height: fit-content;
         background: $primary-color url(./../assets/image/hero/image4.jpg);
         background-size: cover;
         background-position: center;
@@ -250,10 +287,11 @@
                 ul {
                     gap: 2rem;
                     width: 100%;
-                    display: flex;
+                    display: grid;
                     margin-top: 2rem;
                     align-items: start;
                     justify-content: center;
+                    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
 
                     li {
                         display: flex;
@@ -287,14 +325,16 @@
                 gap: 1rem;
                 width: 100%;
                 display: grid;
+                margin-top: 6rem;
                 position: relative;
                 align-items: center;
                 justify-content: center;
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
                 img {
                     width: 100%;
                     height: auto;
+                    max-width: 140px;
                     position: relative;
                 }
             }
@@ -342,6 +382,12 @@
                             text-transform: lowercase;
                         }
                     }
+
+                    @media (max-width: 500px) {
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 0.6rem;
+                    }
                 }
             }
         }
@@ -353,6 +399,7 @@
             transform: translateX(-50%);
 
             display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
 
@@ -372,7 +419,7 @@
 
     .animal {
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         position: relative;
         background: $primary-color url(./../assets/image/hero/image4.jpg);
         background-size: cover;
@@ -386,6 +433,7 @@
             transform: translateX(-50%);
 
             display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
 
@@ -409,7 +457,7 @@
             display: grid;
             align-items: center;
             justify-content: end;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
             .text {
                 width: 100%;
@@ -497,12 +545,43 @@
                 pointer-events: none;
             }
         }
+
+        @media (max-width: 500px) {
+            .content {
+                width: 100%;
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+                .text {
+                    width: 100%;
+                    max-width: 100%;
+                    position: relative;
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 2rem;
+                        position: relative;
+                    }
+
+                    .action {
+                        margin-top: 3rem;
+
+                        .contact {
+                            flex-direction: column;
+                            align-items: start;
+                            gap: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .place {
         width: 100%;
-        height: 130vh;
-        padding: 3rem 0;
+        height: fit-content;
+        padding: 3rem 0 6rem 0;
         position: relative;
         background: $primary-color url(./../assets/image/hero/image4.jpg);
         background-size: cover;
@@ -516,7 +595,7 @@
             display: grid;
             align-items: center;
             justify-content: end;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
             .text {
                 width: 100%;
@@ -613,6 +692,37 @@
 
             font-size: 2rem;
             font-weight: bold;
+        }
+
+        @media (max-width: 500px) {
+            .content {
+                width: 100%;
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+                .text {
+                    width: 100%;
+                    max-width: 100%;
+                    position: relative;
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 2rem;
+                        position: relative;
+                    }
+
+                    .action {
+                        margin-top: 3rem;
+
+                        .contact {
+                            flex-direction: column;
+                            align-items: start;
+                            gap: 0.6rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -723,6 +833,11 @@
                             font-size: 1rem;
                         }
                     }
+                }
+
+                @media (max-width: 850px) {
+                    width: 400px;
+                    flex-direction: column;
                 }
             }
 

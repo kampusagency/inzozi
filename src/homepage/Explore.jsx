@@ -7,7 +7,7 @@ import scroll from './../assets/image/icon/chevron-down.svg'
 function Explore() {
   return (
     <>
-      <div className="explore">
+      <div className="explore" id="explore">
         <div className="container">
           <div className="content">
             <div>

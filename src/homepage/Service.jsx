@@ -14,12 +14,12 @@ import phone from "./../assets/image/icon/phone.svg";
 import mail from "./../assets/image/icon/email.svg";
 import scroll from "./../assets/image/icon/chevron-down.svg";
 
-import image1 from "./../assets/image/icon/image (1).svg";
-import image2 from "./../assets/image/icon/image (2).svg";
-import image3 from "./../assets/image/icon/image (3).svg";
-import image4 from "./../assets/image/icon/image (4).svg";
-import image5 from "./../assets/image/icon/image (5).svg";
-import image6 from "./../assets/image/icon/image (6).svg";
+import image1 from "./../assets/image/img/image1.png"
+import image2 from "./../assets/image/img/image2.png"
+import image3 from "./../assets/image/img/image3.png"
+import image4 from "./../assets/image/img/image4.png"
+import image5 from "./../assets/image/img/image5.png"
+import image6 from "./../assets/image/img/image6.png"
 
 const services = [
   {
