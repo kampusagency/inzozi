@@ -124,6 +124,40 @@
                 display: none;
             }
         }
+
+        @media (max-width: 750px) {
+            background: $yellow-color url(./../assets/image/hero/img1.png);
+            background-size: cover;
+            background-position: center;
+
+            .logo {
+                background: $white-color;
+                width: fit-content;
+                display: inline-flex;
+                padding: 1rem;
+
+                img{}
+            }
+
+            .content {
+                color: $white-color;
+
+                h2 {
+                    color: $white-color;
+                    text-shadow: 0 0 6px #000;
+                    font-weight: bold;
+                }
+
+                .line {
+                    background: $white-color;
+                }
+
+                span {
+                    color: $white-color;
+                    text-shadow: 0 0 6px #000;
+                }
+            }
+        }
     }
 
     .explore {
