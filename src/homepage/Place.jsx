@@ -18,19 +18,6 @@ function Place() {
                 <hr className="line" />
                 <span>it is more than just a holiday</span>
               </div>
-              <div className="action">
-                <a className="btn">get in touch with us:</a>
-                <div className="contact">
-                  <a href="tel:250788565515">
-                    <img src={phone} alt="Phone" />
-                    <span>+250 788 565 515</span>
-                  </a>
-                  <a href="mailto:dinahkezio@gmail.com">
-                    <img src={mail} alt="Mail" />
-                    <span>dinahkezio@gmail.com</span>
-                  </a>
-                </div>
-              </div>
             </div>
             <div className="img">
               <img src={place} alt="Safaris" />
