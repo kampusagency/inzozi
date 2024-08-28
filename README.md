@@ -1,5 +1,7 @@
 # Inzozi Tours & Travels
 
+![Inzozi](./public/partners/inzozi.png)
+
 Welcome to **Inzozi Tours & Travels**! We are a Rwanda-based travel agency committed to making your travel experiences extraordinary. Whether you are looking for luxury, adventure, or an unmatched cultural experience, we are here to cater to your travel needs with utmost transparency and reliability.
 
 ![Inzozi Tours & Travels Preview](./public/preview.png)
@@ -67,12 +69,58 @@ Find us on the map in Kigali, Rwanda, and visit our office during working hours 
 
 We are proud to work with the following airlines and partners:
 
-- RwandAir
-- Brussels Airlines
-- KLM
-- Ethiopian Airlines
-- Kenya Airways
-- Qatar Airways
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div align="center">
+    <img src="./public/partners/rwandair.png" alt="RwandAir" width="150"/>
+    <p>RwandAir</p>
+  </div>
+  <div align="center">
+    <img src="./public/partners/brussels.png" alt="Brussels Airlines" width="150"/>
+    <p>Brussels Airlines</p>
+  </div>
+  <div align="center">
+    <img src="./public/partners/klm.png" alt="KLM" width="150"/>
+    <p>KLM</p>
+  </div>
+  <div align="center">
+    <img src="./public/partners/ethiopian.png" alt="Ethiopian Airlines" width="150"/>
+    <p>Ethiopian Airlines</p>
+  </div>
+  <div align="center">
+    <img src="./public/partners/kenya.png" alt="Kenya Airways" width="150"/>
+    <p>Kenya Airways</p>
+  </div>
+  <div align="center">
+    <img src="./public/partners/qatar.png" alt="Qatar Airways" width="150"/>
+    <p>Qatar Airways</p>
+  </div>
+</div>
+
+---
+
+## Developers Contact Information - Kampus Agency
+
+For any technical support or website development inquiries, feel free to reach out to our developer team at **Kampus Agency**.
+
+- **Company**: Kampus Agency
+- **Phone**: +250 733 5454 77
+- **Email**: kampusagency@gmail.com
+- ```Developer: Iwmvictor```
+
+### Social Media
+
+<a href="https://instagram.com/kampusagency" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram"/>
+</a>
+<a href="https://twitter.com/kampusagency" target="_blank">
+  <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter"/>
+</a>
+<a href="https://www.youtube.com/c/kampusagency" target="_blank">
+  <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="YouTube"/>
+</a>
+<a href="https://www.linkedin.com/company/kampusagency" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="LinkedIn"/>
+</a>
 
 ---
 
