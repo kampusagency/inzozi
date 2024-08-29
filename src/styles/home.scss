@@ -56,7 +56,7 @@
                 @media (max-width: 500px) {
                     font-size: 2rem;
                     font-weight: 600;
-                    text-shadow: 0 0 6px $white-color;
+                    // text-shadow: 0 0 6px $white-color;
                 }
             }
 
@@ -79,7 +79,7 @@
                 text-transform: uppercase;
 
                 @media (max-width: 500px) {
-                    text-shadow: 0 0 6px $white-color;
+                    // text-shadow: 0 0 6px $white-color;
                 }
             }
         }
@@ -130,31 +130,31 @@
             background-size: cover;
             background-position: center;
 
-            .logo {
-                background: $white-color;
-                width: fit-content;
-                display: inline-flex;
-                padding: 1rem;
+            // .logo {
+            //     background: $white-color;
+            //     width: fit-content;
+            //     display: inline-flex;
+            //     padding: 1rem;
 
-                img{}
-            }
+            //     img{}
+            // }
 
             .content {
-                color: $white-color;
+                color: $accent-color;
 
                 h2 {
-                    color: $white-color;
-                    text-shadow: 0 0 6px #000;
+                    color: $accent-color;
+                    // text-shadow: 0 0 6px #000;
                     font-weight: bold;
                 }
 
                 .line {
-                    background: $white-color;
+                    background: $accent-color;
                 }
 
                 span {
-                    color: $white-color;
-                    text-shadow: 0 0 6px #000;
+                    color: $accent-color;
+                    // text-shadow: 0 0 6px #000;
                 }
             }
         }
