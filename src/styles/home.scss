@@ -143,18 +143,18 @@
                 color: $accent-color;
 
                 h2 {
-                    color: $accent-color;
-                    // text-shadow: 0 0 6px #000;
+                    color: $white-color;
+                    text-shadow: 0 0 6px #000;
                     font-weight: bold;
                 }
 
                 .line {
-                    background: $accent-color;
+                    background: $white-color;
                 }
 
                 span {
-                    color: $accent-color;
-                    // text-shadow: 0 0 6px #000;
+                    color: $white-color;
+                    text-shadow: 0 0 6px #000;
                 }
             }
         }
