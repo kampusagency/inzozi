@@ -27,16 +27,16 @@ function Map() {
             <div className="card-details">
               <div className="line">
                 <p className="title">
-                  <FaPhoneAlt /> Mobile phone
+                  <FaWhatsapp /> Mobile phone
                 </p>
                 <a href="tel:250788565515">(250) 788 565 515</a>
               </div>
-              <div className="line">
+              {/* <div className="line">
                 <p className="title">
                   <FaWhatsapp /> WhatsApp
                 </p>
                 <a href="https://wa.me/250788565515">(250) 788 565 515</a>
-              </div>
+              </div> */}
               <div className="line">
                 <p className="title">
                   <MdOutlineAccessTime /> Working hours
