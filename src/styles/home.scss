@@ -264,6 +264,8 @@
                     span {
                         font-size: 1rem;
                         font-weight: 400;
+                        display: flex;
+                        align-items: center;
                         text-transform: lowercase;
                     }
                 }
@@ -438,6 +440,8 @@
                         span {
                             font-size: 1rem;
                             font-weight: 400;
+                            display: flex;
+                            align-items: center;
                             text-transform: lowercase;
                         }
                     }
@@ -592,6 +596,8 @@
                             }
 
                             span {
+                                display: flex;
+                                align-items: center;
                                 font-size: 1rem;
                                 font-weight: 400;
                                 color: $accent-color;

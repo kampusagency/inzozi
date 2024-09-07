@@ -3,6 +3,8 @@ import React from "react";
 import phone from "./../assets/image/icon/phone.svg";
 import mail from "./../assets/image/icon/email.svg";
 import scroll from './../assets/image/icon/chevron-down.svg'
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa6";
 
 function Explore() {
   return (
@@ -21,11 +23,11 @@ function Explore() {
               </a>
               <div className="contact">
                 <a href="tel:250788565515">
-                  <img src={phone} alt="Phone" />
+                  <span><FaPhoneAlt/></span>
                   <span>+250 788 565 515</span>
                 </a>
                 <a href="mailto:dinahkezio@gmail.com">
-                  <img src={mail} alt="Mail" />
+                  <span><FaEnvelope/></span>
                   <span>dinahkezio@gmail.com</span>
                 </a>
               </div>

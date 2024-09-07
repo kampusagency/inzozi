@@ -14,12 +14,14 @@ import phone from "./../assets/image/icon/phone.svg";
 import mail from "./../assets/image/icon/email.svg";
 import scroll from "./../assets/image/icon/chevron-down.svg";
 
-import image1 from "./../assets/image/img/image1.png"
-import image2 from "./../assets/image/img/image2.png"
-import image3 from "./../assets/image/img/image3.png"
-import image4 from "./../assets/image/img/image4.png"
-import image5 from "./../assets/image/img/image5.png"
-import image6 from "./../assets/image/img/image6.png"
+import image1 from "./../assets/image/img/image1.png";
+import image2 from "./../assets/image/img/image2.png";
+import image3 from "./../assets/image/img/image3.png";
+import image4 from "./../assets/image/img/image4.png";
+import image5 from "./../assets/image/img/image5.png";
+import image6 from "./../assets/image/img/image6.png";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa6";
 
 const services = [
   {
@@ -94,11 +96,17 @@ function Service() {
               <a className="btn">get in touch with us:</a>
               <div className="contact">
                 <a href="tel:250788565515">
-                  <img src={phone} alt="Call us" />
+                  {/* <img src={phone} alt="Call us" /> */}
+                  <span>
+                    <FaPhoneAlt />
+                  </span>
                   <span>+250 788 565 515</span>
                 </a>
                 <a href="mailto:dinahkezio@gmail.com">
-                  <img src={mail} alt="Mail us" />
+                  {/* <img src={mail} alt="Mail us" /> */}
+                  <span>
+                    <FaEnvelope />
+                  </span>
                   <span>dinahkezio@gmail.com</span>
                 </a>
               </div>
