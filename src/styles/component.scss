@@ -27,12 +27,13 @@
             position: relative;
 
             ul {
-                display: grid;
+                // gap: 1rem;
+                display: flex;
+                flex-wrap: wrap;
                 text-align: center;
                 align-items: center;
+                justify-content: center;
                 font-family: $font-primary;
-                justify-content: space-between;
-                grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 
                 li {
                     a {
@@ -41,6 +42,7 @@
                         white-space: nowrap;
                         color: $accent-color;
                         position: relative;
+                        padding: 0 0.6rem;
                         font-weight: 400;
 
                         &:hover {
@@ -62,6 +64,7 @@
             width: 100%;
             border: none;
             height: 0.1rem;
+            display: none;
             background-color: $accent-color;
         }
 
@@ -69,9 +72,12 @@
             width: 100%;
             padding: 1rem 0;
             position: relative;
+            background: #1a1a1a;
 
             ul {
+                gap: 1rem;
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
@@ -79,7 +85,7 @@
                 li {
                     padding: 0 1rem;
                     border-right: 0.1rem solid;
-                    border-color: $accent-color;
+                    border-color: #a1a1a1;
 
                     &:last-child {
                         border: none;
@@ -90,9 +96,208 @@
                         height: auto;
                         max-width: auto;
                         max-height: 1.5rem;
+                        filter: grayscale(100%) brightness(1000%) contrast(0%);
                     }
                 }
             }
         }
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    .circle {
+        background-color: #25d366; // Official WhatsApp green
+        border-radius: 50%;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+        }
+    }
+
+    .chat-interface {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        padding: 20px;
+        z-index: 1001;
+
+        &.active {
+            display: block;
+        }
+
+        h3 {
+            margin: 0 0 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        textarea {
+            width: calc(100% - 20px);
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button.send-button {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-color: #1ebe56;
+            }
+        }
+    }
+}
+
+// BackToTop.scss
+.back-to-top {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    background-color: #007bff; // Customize as needed
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+
+    &.visible {
+        display: flex;
+    }
+
+    &:hover {
+        background-color: #0056b3; // Customize hover color as needed
+    }
+}
+
+.intouch {
+    $primary-color: #6caada;
+    $white-color: #ffffff;
+    $accent-color: #85161c;
+    $yellow-color: #e5bb2c;
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        background: $white-color;
+        border-radius: 8px;
+        padding: 4rem 2rem 2rem;
+        width: 400px;
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: $primary-color;
+    }
+
+    .back-btn {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: $accent-color;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .modal-options,
+    .modal-chat {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-options button,
+    .send-button {
+        background-color: $primary-color;
+        color: $white-color;
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .modal-options button:hover,
+    .send-button:hover {
+        background-color: darken($primary-color, 10%);
+    }
+
+    .chat-bubble {
+        background: $yellow-color;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .send-button {
+        background-color: $accent-color;
+    }
+
+    .send-button:hover {
+        background-color: darken($accent-color, 10%);
     }
 }

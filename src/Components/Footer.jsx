@@ -55,6 +55,7 @@ function Footer() {
         <div className="imigongo">
           <img src={imigongo} alt="Umugongo" />
         </div>
+
         <div className="container">
           <div className="content">
             <div className="top">
@@ -66,16 +67,22 @@ function Footer() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="content">
             <hr className="line" />
-            <div className="bottom">
-              <ul>
-                {partners.map((partner, index) => (
-                  <li key={index}>
-                    <img src={partner.thumbnail} alt={partner.name} />
-                  </li>
-                ))}
-              </ul>
-            </div>
+          </div>
+        </div>
+        <div className="content">
+          <div className="bottom">
+            <ul>
+              {partners.map((partner, index) => (
+                <li key={index}>
+                  <img src={partner.thumbnail} alt={partner.name} />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

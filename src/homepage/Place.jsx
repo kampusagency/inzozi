@@ -14,7 +14,7 @@ function Place() {
           <div className="content">
             <div className="text">
               <div>
-                <h2>Your dream African Safari</h2>
+                <h2>Your dream <br /> African Safari</h2>
                 <hr className="line" />
                 <span>it is more than just a holiday</span>
               </div>

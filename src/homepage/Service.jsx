@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import imigongo from "./../assets/image/img/imigongo.svg";
 import airport from "./../assets/image/icon/airport.svg";
@@ -22,6 +22,8 @@ import image5 from "./../assets/image/img/image5.png";
 import image6 from "./../assets/image/img/image6.png";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa6";
+
+import Modal from "../Components/modal";
 
 const services = [
   {
@@ -61,6 +63,11 @@ const services = [
 const grids = [image1, image2, image3, image4, image5, image6];
 
 function Service() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <>
       <div className="service">
@@ -93,7 +100,7 @@ function Service() {
               ))}
             </div>
             <div className="bottom">
-              <a className="btn">get in touch with us:</a>
+              <a className="btn" onClick={openModal}>get in touch with us:</a>
               <div className="contact">
                 <a href="tel:250788565515">
                   {/* <img src={phone} alt="Call us" /> */}
@@ -117,6 +124,8 @@ function Service() {
           <img src={scroll} alt="scroll-down" />
         </a>
       </div>
+      
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

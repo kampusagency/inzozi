@@ -35,8 +35,15 @@
             img {
                 width: 100%;
                 height: auto;
-                max-width: 6rem;
+                max-width: 10rem;
+
+                @media (max-width: 450px) {
+                    max-width: 6rem;
+                }
             }
+
+
+            
         }
 
         .content {
@@ -172,7 +179,7 @@
         .container {
             height: 100%;
             position: relative;
-            padding: 6rem 0;
+            padding: 4rem 0;
         }
 
         .content {
@@ -243,6 +250,8 @@
                 }
             }
 
+            a{cursor: pointer;}
+
             .contact {
                 gap: 2rem;
                 display: flex;
@@ -308,10 +317,17 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        padding-top: 4rem;
+
+        
+
+        .imigongo {
+            display: none;
+        }
 
         .content {
             width: 100%;
-            margin-top: 9rem;
+            // margin-top: 9rem;
             position: relative;
 
             .wedo {
@@ -329,7 +345,7 @@
 
                     @media (max-width: 600px) {
                         font-size: 2.2rem;
-                        font-weight: normal;;
+                        font-weight: normal;
                     }
 
                     @media (max-width: 390px) {
@@ -825,12 +841,12 @@
                 left: 63%;
                 transform: translate(-50%, -50%);
                 background: $white-color;
-                padding: 20px;
+                padding: 2rem;
                 border: 1px solid rgba(0, 0, 0, 0.2);
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
                 display: flex;
                 align-items: center;
-                max-width: 420px;
+                max-width: 620px;
                 transition:
                     transform 0.3s ease,
                     opacity 0.3s ease;
@@ -879,7 +895,7 @@
                             color: $accent-color;
                             gap: 0.3rem;
                             opacity: 0.8;
-                            font-size: 0.8rem;
+                            font-size: 1rem;
 
                             svg {
                                 font-size: 1rem;
@@ -889,7 +905,7 @@
                         a {
                             color: $accent-color;
                             font-weight: 600;
-                            font-size: 1rem;
+                            font-size: 1.2rem;
                             line-height: 1.2;
 
                             &:hover {
