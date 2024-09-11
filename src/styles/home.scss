@@ -38,14 +38,21 @@
                 max-width: 10rem;
 
                 @media (max-width: 450px) {
-                    max-width: 6rem;
+                    max-width: 7rem;
                 }
             }
 
-                @media (max-width: 420px) {
-                    text-align: start;
-                    padding-top: 1rem;
-                }
+            @media (max-width: 750px) {
+                padding:  1rem 0;
+                max-width: 8rem;
+                padding-bottom: 10rem;
+            }
+
+            @media (max-width: 450px) {
+                text-align: start;
+                padding-top: 0.6rem;
+                padding-bottom: 7rem;
+            }
         }
 
         .content {
@@ -57,13 +64,14 @@
 
             h2 {
                 font-size: 3rem;
+                padding: 1rem 0;
+                line-height: 1.2;
                 font-weight: lighter;
                 color: $accent-color;
-                line-height: 1.2;
-                padding: 1rem 0;
 
                 @media (max-width: 562px) {
                     font-size: 2.7rem;
+                    margin-bottom: -1rem;
                 }
 
                 @media (max-width: 506px) {
@@ -248,21 +256,20 @@
                 font-weight: 700;
                 text-transform: uppercase;
 
-
                 @media (max-width: 525px) {
-                    font-size: .8rem;
+                    font-size: 0.8rem;
                 }
 
                 @media (max-width: 350px) {
-                    font-size: .7rem;
+                    font-size: 0.7rem;
                 }
 
                 @media (max-width: 306px) {
-                    font-size: .6rem;
+                    font-size: 0.6rem;
                 }
 
                 @media (max-width: 263px) {
-                    font-size: .5rem;
+                    font-size: 0.5rem;
                 }
             }
 
@@ -867,8 +874,6 @@
             font-size: 2rem;
             font-weight: bold;
 
-
-
             @media (max-width: 400px) {
                 font-size: 1.5rem;
             }
@@ -1101,16 +1106,14 @@
         }
     }
 
-    h2{
-    text-transform: capitalize;
+    h2 {
+        text-transform: capitalize;
     }
 
     @media (max-width: 420px) {
         text-align: center;
         align-items: center;
         justify-content: center;
-
-        
 
         .content {
             .line {
