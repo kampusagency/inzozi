@@ -99,25 +99,7 @@ function Service() {
                 </div>
               ))}
             </div>
-            <div className="bottom">
-              <a className="btn" onClick={openModal}>get in touch with us:</a>
-              <div className="contact">
-                <a href="tel:250788565515">
-                  {/* <img src={phone} alt="Call us" /> */}
-                  <span>
-                    <FaPhoneAlt />
-                  </span>
-                  <span>+250 788 565 515</span>
-                </a>
-                <a href="mailto:dinahkezio@gmail.com">
-                  {/* <img src={mail} alt="Mail us" /> */}
-                  <span>
-                    <FaEnvelope />
-                  </span>
-                  <span>dinahkezio@gmail.com</span>
-                </a>
-              </div>
-            </div>
+           
           </div>
         </div>
         <a href="" className="scroll">
