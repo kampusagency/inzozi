@@ -14,9 +14,9 @@ function Place() {
           <div className="content">
             <div className="text">
               <div>
-                <h2>Your dream <br /> African Safari</h2>
+                <h2>Plan your next <br /> trip with us</h2>
                 <hr className="line" />
-                <span>it is more than just a holiday</span>
+                <span>transparency and reliability <br /> right from the very start</span>
               </div>
             </div>
             <div className="img">

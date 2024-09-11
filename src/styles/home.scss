@@ -41,9 +41,6 @@
                     max-width: 6rem;
                 }
             }
-
-
-            
         }
 
         .content {
@@ -60,10 +57,26 @@
                 line-height: 1.2;
                 padding: 1rem 0;
 
+                @media (max-width: 562px) {
+                    font-size: 2.7rem;
+                }
+
+                @media (max-width: 506px) {
+                    font-size: 2.4rem;
+                }
+
                 @media (max-width: 500px) {
                     font-size: 2rem;
                     font-weight: 600;
                     // text-shadow: 0 0 6px $white-color;
+                }
+
+                @media (max-width: 375px) {
+                    font-size: 1.65rem;
+                }
+
+                @media (max-width: 310px) {
+                    font-size: 1.5rem;
                 }
             }
 
@@ -85,8 +98,16 @@
                 color: $accent-color;
                 text-transform: uppercase;
 
-                @media (max-width: 500px) {
-                    // text-shadow: 0 0 6px $white-color;
+                @media (max-width: 460px) {
+                    font-size: 1rem;
+                }
+
+                @media (max-width: 381px) {
+                    font-size: 0.8rem;
+                }
+
+                @media (max-width: 305px) {
+                    font-size: 0.7rem;
                 }
             }
         }
@@ -241,6 +262,10 @@
                     display: inline-flex;
                     text-transform: uppercase;
                     background: $accent-color;
+
+                    @media (max-width: 310px) {
+                        font-size: 0.8rem;
+                    }
                 }
 
                 a {
@@ -250,7 +275,9 @@
                 }
             }
 
-            a{cursor: pointer;}
+            a {
+                cursor: pointer;
+            }
 
             .contact {
                 gap: 2rem;
@@ -319,8 +346,6 @@
         background-attachment: fixed;
         padding-top: 4rem;
 
-        
-
         .imigongo {
             display: none;
         }
@@ -350,6 +375,10 @@
 
                     @media (max-width: 390px) {
                         font-size: 2rem;
+                    }
+
+                    @media (max-width: 355px) {
+                        font-size: 1.5rem;
                     }
                 }
 
@@ -432,6 +461,10 @@
                     display: inline-flex;
                     text-transform: uppercase;
                     background: $accent-color;
+
+                    @media (max-width: 316px) {
+                        font-size: 0.8rem;
+                    }
                 }
 
                 .contact {
@@ -569,6 +602,14 @@
                     font-weight: 700;
                     color: $white-color;
                     text-transform: uppercase;
+
+                    @media (max-width: 398px) {
+                        font-size: 1rem;
+                    }
+
+                    @media (max-width: 331px) {
+                        font-size: 0.8rem;
+                    }
                 }
 
                 .action {
@@ -585,6 +626,10 @@
                         display: inline-flex;
                         text-transform: uppercase;
                         background: $accent-color;
+
+                        @media (max-width: 316px) {
+                            font-size: 0.8rem;
+                        }
                     }
 
                     a {
@@ -661,6 +706,16 @@
                 }
             }
         }
+
+        @media (max-width: 277px) {
+            .content {
+                .text {
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
     }
 
     .place {
@@ -693,7 +748,6 @@
                     font-weight: lighter;
                     color: $white-color;
                     line-height: 1.2;
-                    // padding: 1rem 0;
                 }
 
                 .line {
@@ -709,6 +763,14 @@
                     font-weight: 700;
                     color: $white-color;
                     text-transform: uppercase;
+
+                    @media (max-width: 395px) {
+                        font-size: 1rem;
+                    }
+
+                    @media (max-width: 329px) {
+                        font-size: 0.8rem;
+                    }
                 }
 
                 .action {
@@ -777,6 +839,10 @@
 
             font-size: 2rem;
             font-weight: bold;
+
+            @media (max-width: 389px) {
+                font-size: 1.8rem;
+            }
         }
 
         @media (max-width: 500px) {
@@ -805,6 +871,16 @@
                             align-items: start;
                             gap: 0.6rem;
                         }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 284px) {
+            .content {
+                .text {
+                    h2 {
+                        font-size: 1.5rem;
                     }
                 }
             }
