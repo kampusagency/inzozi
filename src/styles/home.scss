@@ -200,7 +200,7 @@
         .container {
             height: 100%;
             position: relative;
-            padding: 4rem 0;
+            padding: 1rem 0 3rem;
         }
 
         .content {
@@ -243,8 +243,21 @@
                 font-weight: 700;
                 text-transform: uppercase;
 
-                @media (max-width: 400px) {
-                    font-size: 1.1rem;
+
+                @media (max-width: 525px) {
+                    font-size: .8rem;
+                }
+
+                @media (max-width: 350px) {
+                    font-size: .7rem;
+                }
+
+                @media (max-width: 306px) {
+                    font-size: .6rem;
+                }
+
+                @media (max-width: 263px) {
+                    font-size: .5rem;
                 }
             }
 
@@ -843,13 +856,16 @@
             position: absolute;
             left: 50%;
             bottom: 2rem;
+            text-transform: capitalize;
             transform: translateX(-50%);
 
             font-size: 2rem;
             font-weight: bold;
 
-            @media (max-width: 389px) {
-                font-size: 1.8rem;
+
+
+            @media (max-width: 400px) {
+                font-size: 1.5rem;
             }
         }
 
@@ -1078,6 +1094,10 @@
                 }
             }
         }
+    }
+
+    h2{
+    text-transform: capitalize;
     }
 
     @media (max-width: 420px) {

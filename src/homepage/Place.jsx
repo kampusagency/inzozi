@@ -4,7 +4,7 @@ import phone from "./../assets/image/icon/phone.svg";
 import mail from "./../assets/image/icon/email.svg";
 import scroll from "./../assets/image/icon/chevron-down.svg";
 
-import place from './../assets/image/img/animal.png'
+import place from './../assets/image/img/place.png'
 
 function Place() {
   return (
