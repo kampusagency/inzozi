@@ -231,7 +231,7 @@
             }
 
             .line {
-                width: 100%;
+                width: 96%;
                 border: none;
                 margin: 1rem 0;
                 height: 0.12rem;
@@ -502,7 +502,7 @@
                     }
                 }
 
-                @media (max-width:420px) {
+                @media (max-width: 420px) {
                     // margin-top: 4rem;
                     display: flex;
                     align-items: center;
@@ -598,7 +598,7 @@
                 }
 
                 .line {
-                    width: 100%;
+                    width: 90%;
                     border: none;
                     margin: 1rem 0;
                     height: 0.12rem;
@@ -759,7 +759,7 @@
                 }
 
                 .line {
-                    width: 100%;
+                    width: 90%;
                     border: none;
                     margin: 1rem 0;
                     height: 0.12rem;
@@ -1093,7 +1093,7 @@
                 transform: translateX(-50%);
             }
 
-            .action{
+            .action {
                 margin-top: 4rem;
                 display: flex;
                 text-align: center;
