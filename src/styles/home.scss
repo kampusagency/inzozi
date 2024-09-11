@@ -41,6 +41,11 @@
                     max-width: 6rem;
                 }
             }
+
+                @media (max-width: 420px) {
+                    text-align: start;
+                    padding-top: 1rem;
+                }
         }
 
         .content {
@@ -1104,6 +1109,8 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+
+        
 
         .content {
             .line {
